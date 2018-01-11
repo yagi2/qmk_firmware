@@ -35,25 +35,25 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 /* Default
  * ,-----------------------------------------------------------------------------------.
- * | Esc  |   /  |   ,  |   .  |   F  |   Q  |   M  |   R  |   D  |   Y  |   P  | Bksp |
+ * | Tab  |   /  |   ,  |   .  |   F  |   Q  |   M  |   R  |   D  |   Y  |   P  | Bksp |
  * |------+------+------+------+------+-------------+------+------+------+------+------|
- * | Tab  |   A  |   O  |   E  |   I  |   U  |   G  |   T  |   K  |   S  |   N  | Enter|
+ * | Ctrl |   A  |   O  |   E  |   I  |   U  |   G  |   T  |   K  |   S  |   N  | Enter|
  * |------+------+------+------+------+------|------+------+------+------+------+------|
  * | Shift|   Z  |   X  |   C  |   V  |   W  |   B  |   H  |   J  |   L  |   ;  |'/Sft |
  * |------+------+------+------+------+------+------+------+------+------+------+------|
- * | Ctrl |Adjust| Alt  | GUI  |英数/L |Space |Space |かな/R | Left | Down |  Up  |Right|
+ * | Esc  |Adjust| Alt  | GUI  |英数/L |Space |Space |かな/R | Left | Up  | Down |Right |
  * `-----------------------------------------------------------------------------------'
  */
 [_DEFAULT] = KEYMAP( \
-  KC_ESC,  KC_SLSH, KC_COMM, KC_DOT,   KC_F,    KC_Q,    KC_M,    KC_R,     KC_D,    KC_Y,    KC_P,    KC_BSPC, \
-  KC_TAB,  KC_A,    KC_O,    KC_E,     KC_I,    KC_U,    KC_G,    KC_T,     KC_K,    KC_S,    KC_N,    KC_ENT , \
+  KC_TAB,  KC_SLSH, KC_COMM, KC_DOT,   KC_F,    KC_Q,    KC_M,    KC_R,     KC_D,    KC_Y,    KC_P,    KC_BSPC, \
+  KC_LCTRL,KC_A,    KC_O,    KC_E,     KC_I,    KC_U,    KC_G,    KC_T,     KC_K,    KC_S,    KC_N,    KC_ENT , \
   KC_LSFT, KC_Z,    KC_X,    KC_C,     KC_V,    KC_W,    KC_B,    KC_H,     KC_J,    KC_L,    KC_SCLN, RSFT_QT, \
-  KC_LCTRL,ADJUST,  KC_LALT, KC_LGUI,  LOW_ES,  KC_SPC,  KC_SPC,  RIS_KN,   KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT  \
+  KC_ESC,  ADJUST,  KC_LALT, KC_LGUI,  LOW_ES,  KC_SPC,  KC_SPC,  RIS_KN,   KC_LEFT, KC_UP,   KC_DOWN, KC_RGHT  \
 ),
 
 /* Lower
  * ,-----------------------------------------------------------------------------------.
- * | Esc  |   1  |   2  |   3  |   4  |   5  |   6  |   7  |   8  |   9  |   0  | Bksp |
+ * | Esc  |   1  |   2  |   3  |   4  |   5  |   6  |   7  |   8  |   9  |   0  | Del  |
  * |------+------+------+------+------+-------------+------+------+------+------+------|
  * |      |  F1  |  F2  |  F3  |  F4  |  F5  |  F6  |   4  |   5  |   6  |   -  |      |
  * |------+------+------+------+------+------|------+------+------+------+------+------|
@@ -71,7 +71,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 /* Raise
  * ,-----------------------------------------------------------------------------------.
- * |      |   !  |   @  |   #  |   $  |   %  |   ^  |   &  |   *  |   (  |   )  | Bksp |
+ * |      |   !  |   @  |   #  |   $  |   %  |   ^  |   &  |   *  |   (  |   )  | Del  |
  * |------+------+------+------+------+-------------+------+------+------+------+------|
  * |      |      | Vol- | Vol+ | Mute |   \  |   `  |   -  |   =  |   [  |   ]  |      |
  * |------+------+------+------+------+------|------+------+------+------+------+------|
