@@ -19,8 +19,6 @@ enum lets_split_keycodes {
 };
 
 // Keycodes define
-#define RSFT_QT MT(MOD_RSFT,KC_QUOT)  // タップで「'」 ホールドで右Shift
-
 #define LOW_ES  LT(_LOWER, KC_LANG2)  // タップで英数 ホールドでLower
 #define RIS_KN  LT(_RAISE, KC_LANG1)  // タップでかな ホールドでRaise
 
@@ -39,7 +37,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * |------+------+------+------+------+-------------+------+------+------+------+------|
  * | Ctrl |   A  |   O  |   E  |   I  |   U  |   G  |   T  |   K  |   S  |   N  | Enter|
  * |------+------+------+------+------+------|------+------+------+------+------+------|
- * | Shift|   Z  |   X  |   C  |   V  |   W  |   B  |   H  |   J  |   L  |   ;  |'/Sft |
+ * | Shift|   Z  |   X  |   C  |   V  |   W  |   B  |   H  |   J  |   L  |   ;  | '    |
  * |------+------+------+------+------+------+------+------+------+------+------+------|
  * | Esc  |Adjust| Alt  | GUI  |英数/L |Space |Space |かな/R | Left | Up  | Down |Right |
  * `-----------------------------------------------------------------------------------'
@@ -47,7 +45,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 [_DEFAULT] = KEYMAP( \
   KC_TAB,  KC_SLSH, KC_COMM, KC_DOT,   KC_F,    KC_Q,    KC_M,    KC_R,     KC_D,    KC_Y,    KC_P,    KC_BSPC, \
   KC_LCTRL,KC_A,    KC_O,    KC_E,     KC_I,    KC_U,    KC_G,    KC_T,     KC_K,    KC_S,    KC_N,    KC_ENT , \
-  KC_LSFT, KC_Z,    KC_X,    KC_C,     KC_V,    KC_W,    KC_B,    KC_H,     KC_J,    KC_L,    KC_SCLN, RSFT_QT, \
+  KC_LSFT, KC_Z,    KC_X,    KC_C,     KC_V,    KC_W,    KC_B,    KC_H,     KC_J,    KC_L,    KC_SCLN, KC_QUOT, \
   KC_ESC,  ADJUST,  KC_LALT, KC_LGUI,  LOW_ES,  KC_SPC,  KC_SPC,  RIS_KN,   KC_LEFT, KC_UP,   KC_DOWN, KC_RGHT  \
 ),
 
