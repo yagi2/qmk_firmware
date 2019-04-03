@@ -1,10 +1,16 @@
 # US ANSI Shifted Symbols
 
-These keycodes correspond to characters that are "shifted" on a standard US ANSI keyboards. They do not have dedicated keycodes but are instead typed by holding down shift and then sending a keycode.
+These keycodes correspond to characters that are "shifted" on a standard US ANSI keyboard. They do not have keycodes of their own but are simply shortcuts for `LSFT(kc)`, and as such send a Left Shift with the unshifted keycode, not the symbol itself.
 
-It's important to remember that all of these keycodes send a left shift - this may cause unintended actions if unaccounted for. The short code is preferred in most situations.
+## Caveats
 
-## US ANSI Shifted Keycodes
+Unfortunately, these keycodes cannot be used in Mod-Taps or Layer-Taps, since any modifiers specified in the keycode are ignored.
+
+Additionally, you may run into issues when using Remote Desktop Connection on Windows. Because these codes send shift very fast, Remote Desktop may miss the codes.
+
+To fix this, open Remote Desktop Connection, click on "Show Options", open the the "Local Resources" tab. In the keyboard section, change the drop down to "On this Computer". This will fix the issue, and allow the characters to work correctly.
+
+## Keycodes
 
 |Key                     |Aliases            |Description        |
 |------------------------|-------------------|-------------------|
